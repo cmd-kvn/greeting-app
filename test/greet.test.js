@@ -12,7 +12,7 @@ describe('greeting app', function() {
     //     assert.equal(output, 'hello stranger\n');
     // });
 
-    it('greets by name using cowsay', function(){
+    it('uses "stranger" as a default when no name provided using cowsay', function(){
         var output = run(['./lib/greet.js']);
         assert.equal(output, ` ________________
 < hello stranger >
@@ -22,5 +22,10 @@ describe('greeting app', function() {
             (__)\\       )\\/\\
                 ||----w |
                 ||     ||\n`);
+    });
+
+    it('greets without cowsay when a "--plain" flag is added', function(){
+        var output = run(['./lib/greet.js', '--plain']);
+        assert.equal(output, 'hello stranger\n');
     });
 });
