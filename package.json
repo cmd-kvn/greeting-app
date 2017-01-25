@@ -8,11 +8,13 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "eslint": "^3.14.0",
     "mocha": "^3.2.0"
   },
   "scripts": {
     "test": "mocha",
-    "test:watch": "mocha -w"
+    "test:watch": "mocha -w",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
