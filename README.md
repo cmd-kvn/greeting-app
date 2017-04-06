@@ -1,16 +1,16 @@
-# Greeting App [1.1.0]
+# Greeting App [1.1.1]
 
 ## Usage
 In your terminal in this app directory:
 ```
-$ node ./lib/greet.js --plain
+$ node ./cli.js --plain
 hello stranger ## defaults to 'stranger' when no name is provided
 
-$ node ./lib/greet.js kevin --plain
+$ node ./cli.js kevin --plain
 hello kevin // when name is provided
 ```
 ```
-$ node ./lib/greet.js kevin
+$ node ./cli.js kevin
  _____________
 < hello kevin >
  -------------
@@ -20,7 +20,7 @@ $ node ./lib/greet.js kevin
                 ||----w |
                 ||     ||
 
-$ node ./lib/greet.js
+$ node ./cli.js
  ________________
 < hello stranger >
  ----------------
