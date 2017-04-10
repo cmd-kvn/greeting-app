@@ -1,5 +1,14 @@
 # Change Log
 
+## [1.2.1] 2017-02-15
+### Additions
+* greeting word can be set
+
+### Changes
+* greeting parameters are flags with colons as inputs
+* all flags are optional and can be in any order
+* default name is 'partner' 
+
 ## [1.1.1] 2017-02-08
 ### Additions
 * CLI 
